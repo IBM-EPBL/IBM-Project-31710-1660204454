@@ -1,0 +1,16 @@
+import random
+temperature=random.randint(1,140)
+humidity=random.randint(1,140)
+print("Temperature is =",temperature)
+print("Humidity is =",humidity)
+if (temperature<65):
+    print("Temperature is low and humidity high")
+    print("ALARAM OFF")
+elif(temperature>65) and (temperature<95):
+    print("Temperature is normal and humidity is also normal")
+    print("ALARAM OFF")
+elif(temperature>95):
+    print("Temperature is high and humidity is low")
+    print("ALARAM ON")
+else:
+    print("enter the correct value")
